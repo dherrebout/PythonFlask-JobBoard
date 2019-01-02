@@ -40,4 +40,4 @@ def jobs():
                        'job.salary, employer.id AS employer_id, employer.' +
                        'name AS employer_name FROM job JOIN employer ON ' +
                        'employer.id = job.employer_id')
-    return render_template('index.html' jobs=jobs)
+    return render_template('index.html', jobs=jobs)
